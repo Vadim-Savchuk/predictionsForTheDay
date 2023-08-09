@@ -1,0 +1,66 @@
+.header {
+    gap: 10px;
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offer {
+    gap: 20px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: #000;
+    padding: 10px 20px;
+    background-color: #ede5e5;
+    box-shadow: var(--boxShadow);
+    border-radius: var(--borderRadius);
+}
+
+.thema {
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 5px 10px;
+    align-items: center;
+    background-color: #ede5e5;
+    box-shadow: var(--boxShadow);
+    border-radius: var(--borderRadius);
+}
+
+.info {
+    width: 50px;
+    height: 100%;
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    background-color: #ede5e5;
+    box-shadow: var(--boxShadow);
+    border-radius: var(--borderRadius);
+
+    .text {
+        top: 140%;
+        opacity: 0;
+        left: -600%;
+        width: 400px;
+        transition: 0.2s;
+        visibility: hidden;
+        position: absolute;
+        padding: 10px 20px;
+        background-color: #ede5e5;
+        box-shadow: var(--boxShadow);
+        border-radius: var(--borderRadius);
+    }
+
+    &:hover .text {
+        opacity: 1;
+        visibility: visible;
+    }
+}

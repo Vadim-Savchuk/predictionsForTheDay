@@ -1,0 +1,41 @@
+.info {
+    gap: 20px;
+    color: #000;
+    display: flex;
+    padding: 20px;
+    transition: 0.2s;
+    align-items: flex-start;
+    background-color: #ede5e5;
+    box-shadow: var(--boxShadow);
+    justify-content: space-between;
+    border-radius: var(--borderRadius);
+
+    .offer {
+        .title {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .description {
+            margin-top: 15px;
+            white-space: pre-line;
+        }
+    }
+
+    button {
+        padding: 5px 10px;
+        font-size: var(--mainFontSize);
+        transition: background-color 0.2s;
+        border-radius: var(--borderRadius);
+
+        &:hover {
+            background-color: #c7b4b4;
+        }
+    }
+}
+
+.info.isHiden {
+    opacity: 0;
+    visibility: hidden;
+    margin-bottom: -350px;
+}

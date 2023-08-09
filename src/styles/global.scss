@@ -1,0 +1,63 @@
+@import '../styles/normalize.scss';
+
+#root,
+.container {
+    height: 100%;
+}
+
+:root {
+    --borderRadius: 12px;
+    --mainFontSize: 16px;
+    --bigFontSize: 20px;
+    --mainFont: cursive;
+    --lineHeight: normal;
+}
+
+
+body[data-thema='light'] {
+    --color: #000;
+    --elementBackgroundColor: #000;
+    --heroBackgroundColor: linear-gradient(134deg, #c1c0ed, #b6ffff);
+    --boxShadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+body[data-thema='dark'] {
+    --color: #fff;
+    --elementBackgroundColor: #fff;
+    --heroBackgroundColor: linear-gradient(134deg, #171818, #5a5f5f);
+    --boxShadow: rgba(238, 238, 246, 0.25) 0px 13px 27px -5px, rgba(172, 165, 165, 0.7) 0px 8px 16px -8px;
+}
+
+body {
+    color: var(--color);
+    font-family: var(--mainFont);
+    font-size: var(--mainFontSize);
+    line-height: var(--lineHeight);
+    background: var(--heroBackgroundColor);
+    
+    background-size: 400% 400%;
+    animation: AnimationName 5s ease infinite;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0px 15px;
+    flex-direction: column;
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 7%
+    }
+
+    50% {
+        background-position: 100% 94%
+    }
+
+    100% {
+        background-position: 0% 7%
+    }
+}

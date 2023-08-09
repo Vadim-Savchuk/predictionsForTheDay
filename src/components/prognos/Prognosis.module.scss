@@ -1,0 +1,39 @@
+.prognosis {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    margin-bottom: 10%;
+    flex-direction: column;
+    justify-content: center;
+
+    .number {
+        width: 100px;
+    }
+
+    button,
+    .number {
+        color: #000;
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: #ede5e5;
+        box-shadow: var(--boxShadow);
+        font-size: var(--bigFontSize);
+        transition: background-color 0.2s;
+        border-radius: var(--borderRadius);
+    }
+
+    button:hover {
+        background-color: #c7b4b4;
+    }
+
+    .text {
+        color: #000;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: #ede5e5;
+        box-shadow: var(--boxShadow);
+        font-size: var(--bigFontSize);
+        border-radius: var(--borderRadius);
+    }
+}
